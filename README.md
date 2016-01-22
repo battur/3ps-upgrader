@@ -33,4 +33,5 @@ A nice addition with this small tool is, what you would see and type on the cli 
 This application uses open source libraries [commons-lang3-3.4](http://commons.apache.org/proper/commons-lang/) and [log4j-1.2.17](https://logging.apache.org/log4j/1.2/).
 
 Author: Battur Sanchin (battursanchin@gmail.com)
+
 License: Creative Commons Attribution 4.0 International  
