@@ -30,6 +30,7 @@ If you have 100+ libraries to upgrade for 100+ projects, this tool should come h
 
 A nice addition with this small tool is, what you would see and type on the cli is what is written to the upgrader.log file. Hence, the upgrade is auditable :)
 
-This application uses open source libraries commons-lang3-3.4 and log4j-1.2.17.
+This application uses open source libraries [commons-lang3-3.4](http://commons.apache.org/proper/commons-lang/) and [log4j-1.2.17](https://logging.apache.org/log4j/1.2/).
 
 Author: Battur Sanchin (battursanchin@gmail.com)
+License: Creative Commons Attribution 4.0 International  
