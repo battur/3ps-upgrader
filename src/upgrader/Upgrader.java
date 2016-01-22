@@ -11,7 +11,8 @@ import org.apache.log4j.Logger;
 
 /**
  * A small cli tool that makes 3rd party libraries upgrade easier, faster, and auditable.<br>
- * You may find this tool helpful if you have 50+ libraries for an upgrade and each might affect 10+ projects.
+ * You may find this tool helpful if you have 50+ libraries for an upgrade and each might affect java 10+
+ * projects.
  * <p>
  * The upgrader application runs in either of following 4 states at a time:
  * <p>
@@ -46,8 +47,9 @@ import org.apache.log4j.Logger;
  * <p>
  * If you have 100+ libraries to upgrade for 100+ projects, this tool should come handy. Some of the libraries
  * may not be API compatible, thus the projects may fail to build after an upgrade. Sometimes, a library
- * upgrade may not be desirable if it needs a lot of work (e.g,. code changes, testing) or has serious risks.
- * In this case, you can revert the upgrade by doing the opposite of what you would do for an upgrade:
+ * upgrade may not be desirable if it needs a lot of work (e.g,. code changes, testing) or has high risks
+ * associated. In this case, you can revert the upgrade by doing the opposite of what you would do for an
+ * upgrade:
  * <ul>
  * <li>Take copies of old libraries and place them under new.libraries.dir.
  * <li>Search for the new libraries.
@@ -59,6 +61,8 @@ import org.apache.log4j.Logger;
  * <p>
  * A nice addition with this small tool is, what you would see and type on the cli is what is written to the
  * upgrader.log file. Hence, the upgrade is auditable :)
+ * <p>
+ * This application uses open source libraries commons-lang3-3.4 and log4j-1.2.17.
  * 
  * @author bsanchin
  */
@@ -123,11 +127,11 @@ public class Upgrader {
       prop.load(in);
 
       if (getLibrariesDir() == null || !Files.exists(Paths.get(getLibrariesDir()))) {
-        throw new RuntimeException("upgrader.properties should have an valid entry of 'old.libraries.dir'");
+        throw new RuntimeException("upgrader.properties should have a valid entry of 'old.libraries.dir'");
       }
 
       if (getReplacementLibrariesDir() == null || !Files.exists(Paths.get(getReplacementLibrariesDir()))) {
-        throw new RuntimeException("upgrader.properties should have an valid entry of 'new.libraries.dir'");
+        throw new RuntimeException("upgrader.properties should have a valid entry of 'new.libraries.dir'");
       }
 
     }
