@@ -34,4 +34,4 @@ This application uses open source libraries [commons-lang3-3.4](http://commons.a
 
 Author: Battur Sanchin (battursanchin@gmail.com)
 
-License: Creative Commons Attribution 4.0 International  
+License: Apache 2.0
