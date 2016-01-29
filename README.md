@@ -2,7 +2,7 @@
 An interactive cli tool that makes 3rd party libraries upgrade easier, faster, and auditable. You may find this tool helpful if you have 50+ libraries for an upgrade and each might affect 10+ java projects.
 
 
-The upgrader application runs in either of following 4 states at a time:
+The upgrader application runs in one of following 4 states at a time:
 
 1. SearchLibraryState
 2. LocateReplacementState
